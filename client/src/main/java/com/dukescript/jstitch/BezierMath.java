@@ -5,8 +5,6 @@
  */
 package com.dukescript.jstitch;
 
-import java.awt.Point;
-
 /**
  *
  * @author antonepple
@@ -27,18 +25,13 @@ public class BezierMath {
     }
     
     
-    // steigung der geraden gehört zur Berechnung der Geradengleichung  y= mx +b;  
     static double calculateSlope(Vector v1, Vector v2){
         return (v1.getY()-v2.getY())/(v1.getX()-v2.getX());
     }
     
-    // gehört zur Berechnung der Geradengleichung  y= mx +b;   
     static double calculateYIntercept(Vector v, float slope){
         return v.getY() - (slope * v.getX());        
     }
     
-    
-    
-    
-
+   
 }
